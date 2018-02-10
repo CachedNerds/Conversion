@@ -1,0 +1,11 @@
+name: Conversion
+version: 0.0.1
+build:
+  kind: static-lib
+  compiler: g++
+  compiler_flags: -c --std=c++1z -I ./hatch_modules/Meta/src -I ./src
+  linker_flags: -v
+  arch: x64
+  target: debug
+deps:
+  Meta: https://github.com/CachedNerds/Meta.git
